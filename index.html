@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Importando efeito JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <!--ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--Icon-->
     <link rel="shortcut icon" type="imagex/png" href="images/logo2.ico">
     <!--Font CDN-->
@@ -25,14 +29,13 @@
                         <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
                         <li><a href="https://github.com/guizeraSK?tab=repositories" target="_blank">Projetos</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
                         <li><a href="mailto:guisantiago1@gmail.com?subject=Interesse de Conversa">Contato</a></li>
                     </ul>
                 </nav>
             </header>
-            <div class="container">
+            <mg class="container">
                 <div class="hero-pic">
                     <img src="images/perfil.jpg" alt="profile pic">
                 </div>
@@ -53,28 +56,88 @@
                         <a href="#"><i class="fa-brands fa-dribble"></i></a>
                     </div>
                 </div>
+              </div>
+              <section class="seta">
+                <div class="setaBaixo"><a href="#skills"><img src="images/icon-setabaixo.png"></a></div>
+              </section>
             </div>
-        </div>
     </div>
-    <!-- Importando efeito JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-    <script>
-        /* Criando script do clique do botão */
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
-
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
-
-        var typed=new Typed(".input",{
-            strings:["Web Developer", "Java Developer", "Cloud Analyst"],
-            typedSpeed:70,
-            backSpeed:55,
-            loop:true
-        })
-    </script>
+    <section class="skills" id="skills">
+      <h2 class="h2skill">Habilidades</h2>
+      <div class="skill">
+          <div class="tec-content">
+              <div id="programas-text">
+                <div class="programas">
+                  <div class="item-programa" id="js">
+                    <p>JavaScript</p>
+                    <img src="images/svg/icon-javascript.svg" class="icon" alt="Ícone Javascript">
+                  </div>
+                  
+                  <div class="item-programa" id="html">
+                    <p>HTML5</p>
+                    <img src="images/svg/icon-html.svg" class="icon" alt="Ícone HTML5">
+                  </div>
+                  <div class="item-programa" id="css">
+                    <p>CSS3</p>
+                    <img src="images/svg/icon-css.svg" class="icon" alt="Ícone CSS3">
+                  </div>
+                  <div class="item-programa" id="git">
+                    <p>Git</p>
+                    <img src="images/svg/icon-git.svg" class="icon" alt="Ícone GIT">
+                  </div>
+                  <div class="item-programa" id="gith">
+                    <p>GitHub</p>
+                    <img src="images/svg/icon-github.svg" class="icon" alt="Ícone GITHUB">
+                  </div>
+                  <div class="item-programa" id="css">
+                    <p>Azure</p>
+                    <img src="images/svg/icons-azure.svg" class="icon" alt="Ícone Azure">
+                  </div>
+                  <div class="item-programa" id="css">
+                    <p>Java</p>
+                    <img src="images/svg/icon-java.svg" class="icon" alt="Ícone Java">
+                  </div>
+                  
+                </div>
+      
+                <div class="descrição-tec">
+                  <p id="instrucao">Passe o mouse por cima das tecnologias para ver a descrição</p>
+                  <p class="hide desc-text" id="desc-js">JavaScript <br> <br>
+                    Prática na linguagem JavaScript, tendo conhecimento pelo curso na Alura.
+                  </p>
+                  <p class="hide desc-text" id="desc-html">HTML5 <br> <br>
+                    Conhecimento da tecnologia, com mais tempo de prática, sendo a porta de entreda na área de TI.
+                  </p>
+                  <p class="hide desc-text" id="desc-css">CSS3 <br> <br>
+                    Utilizado para a estilização de páginas Web, tenho conhecimento em bastantes recursos, além de sempre
+                    estar praticando e conhecendo novas funcionalidades.
+                  </p>
+                  <p class="hide desc-text" id="desc-git">Git <br> <br>
+                    É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.
+                  </p>
+                  <p class="hide desc-text" id="desc-github">GitHub <br> <br>
+                    É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+                  </p>
+                  <p class="hide desc-text" id="desc-azure">Azure <br> <br>
+                    Conhecimento em AZ-900 e AZ-104 e prática em gerenciar ambientes Cloud.
+                  </p>
+                  <p class="hide desc-text" id="desc-Java">Java <br> <br>
+                    Conhecimento na linguagem Java, utilizando ela na realizações de jogos entre outros projetos facultativos.
+                  </p>
+                </div>
+              </div>
+              <div class="outros-conhecimentos">
+                <h3>Além disso, Conhecimento nas ferramentas e áreas de:</h3>
+                <ul>
+                  <li>Grafana;</li>
+                  <li>Zabbix;</li>
+                  <li>SQL server;</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
