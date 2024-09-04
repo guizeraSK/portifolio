@@ -36,7 +36,7 @@
     })
 
     var typed=new Typed(".input",{
-        strings:["Web Developer", "Java Developer", "Cloud Analyst"],
+        strings:["Software Developer", "Java Developer", "Cloud Analyst", "NOC Monitorament"],
         typedSpeed:70,
         backSpeed:55,
         loop:true
